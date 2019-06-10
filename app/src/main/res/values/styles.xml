@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorLightBlue</item>
+        <item name="android:textColorPrimary">@color/colorLightGrey</item>
+        <item name="android:itemBackground">@color/colorDarkBlue</item> <!-- colore sottomenu Toolbar -->
+
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/amazon_ember_bold</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorLightBlue</item>
+        <item name="android:editTextColor">@color/colorLightBlue</item>
+        <item name="android:textColorHint">@color/colorLightBlue</item>
+
+    </style>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="@color/colorDarkBlue"
+              android:orientation="vertical"
+    tools:context="com.megalexa.hexadec.view.NewWorkflowActivity">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="425dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ActionBarTheme"
+            android:padding="5dp"
+            app:logo="@drawable/orizontallogo"
+            app:navigationIcon="@drawable/arrow_back"
+            android:layout="@menu/new_menu"
+    />
+    <TextView
+            android:id="@+id/WorkflowTitleTextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addworkflowTitle"
+            android:textColor="@color/colorLightGrey"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/WorkflowName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/workflowName"
+            android:importantForAutofill="no"
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+            app:backgroundTint="@color/colorLightGrey" android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+    <TextView
+            android:id="@+id/WorkflowWelcomeTextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/workflowWelcomeText"
+            android:textColor="@color/colorLightGrey" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/WorkflowWelcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:autofillHints=""
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+            app:backgroundTint="@color/colorLightGrey" android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/ConfigurationBlock"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/workflowAddBlocks"
+                    android:textColor="@color/colorLightBlue"
+
+            />
+
+            <Button android:layout_weight="1"
+                    android:id="@+id/WorkflowDeleteButton"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:width="0dp"
+                    android:text="@string/deleteBtn"
+                    android:gravity="center"
+                    android:textColor="@color/colorLightBlue"
+
+            />
+            <Button android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:layout_width="0dp"
+                    android:id="@+id/WorkflowSaveButton"
+                    android:text="@string/save"
+                    android:textColor="@color/colorLightBlue"
+                    android:layout_gravity="right|center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
